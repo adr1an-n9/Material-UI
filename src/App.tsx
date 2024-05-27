@@ -1,24 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import {
+  Table,
+  RangePicker,
+  Charts,
+  Form,
+  Dropdown,
+  Skeleton,
+} from "./components";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Material UI</h1>
       </header>
+      <div className="Element">
+        <h2>Table</h2>
+        <Table />
+      </div>
+      <div className="Element">
+        <h2>RangePicker</h2>
+        <RangePicker />
+      </div>
+      <div className="Element">
+        <h2>Charts</h2>
+        <Charts />
+      </div>
+      <div className="Element">
+        <h2>Form</h2>
+        <Form />
+      </div>
+      <div className="Element-3">
+        <Dropdown />
+      </div>
+      <div className="Element-3">
+        <h2>Skeleton</h2>
+        <Skeleton />
+      </div>
     </div>
   );
 }
